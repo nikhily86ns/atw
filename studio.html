@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 21px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 0;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+button#dropdownMenuButton {
+    background: transparent;
+    border: none;
+}
+</style>
+
+  </head>
+  <body class="bg-blue">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-blue pad-left-1">
+          <div class="arrow-left">
+            <a href="./landing.html">
+              <i class="fa fa-arrow fa-angle-left" aria-hidden="true"></i></div>
+            </a>
+            
+            
+            <a class="navbar-brand-studio" href="#">Studio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <form class="form-inline add-des-mar my-2 my-lg-0">
+               <a href="#" class="btn add-designation-btn"> + Add Destination</a>
+               <a href="#" class="btn go-live-btn"> Go Live </a>
+              </form>
+            </div>
+          </nav>
+      </header>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">         
+          <div class="col-md-12">
+            <div class="grid-container">
+              <div class="grid-item">
+                <div class="fir-bg">
+                  <div class="firt-sec">
+                  </div>
+                  <div class="sec-sec">
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid-item-1">
+                <div class="blk-screen text-center">
+                  <div class="pad-blk-screen">
+                    <i class="fa fa-video fa-video-camera"></i>
+                    <p class="access-camera-p">Accessing your camera</p>
+                    <p class="acs-camera-p">Get started by allowing Restream Studio to use your  camera and mic.</p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <button class="btn btn-allow-mic">Allow Mic/Webcam</button>
+                      </div>
+                      <div class="col-md-6">
+                        <button class="btn btn-without"><u style="color:#fff"> Start without camera</u></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="lght-back-clr"></div>
+                <div class="img-df icons-group">
+                  <i class="fa fa-micro fa-microphone" aria-hidden="true"></i>
+                  <i class="fa fa-vido fa-video-camera" aria-hidden="true"></i>
+                  <i class="fa fa-lapt fa-laptop" aria-hidden="true"></i>
+                  <i class="fa fa-user fa-user-plus" aria-hidden="true"></i>
+                  <i class="fa fa-pls fa-plus" aria-hidden="true"></i>
+                  <i class="fa fa-grear fa-gear" aria-hidden="true"></i>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                    <div class="btn-group dropup down-up">
+                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Private chat
+                      </button>
+                      <div class="dropdown-menu" style="background: #172b4d;">
+                        <a class="dropdown-item it-col" href="#">  <i class="fa fa-cmt-1 fa-comments-o" aria-hidden="true"></i>Private chat</a> <hr>
+                        <a class="dropdown-item it-col" href="#">
+                          <div class="space-p">
+                            <p class="privately-p">Privately talk with the host and other guests</p>
+                          </div>
+                        </a>
+                        <a class="dropdown-item it-col" href="#">
+                          <div class="row">
+                            <div class="col-md-10">
+                              <input placeholder="Type a message..." class="private-chat-input" type="text">
+                            </div>
+                            <div class="col-md-2">
+                              <img class="icon-img-send" src="./image/send-icon.png" alt="">
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-6 col-sm-6 col-6 text-right">
+                    <i class="fa fa-cm fa-comment" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid-item">
+                <div class="row">
+                  <div class="col-md-12">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link font-nav active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                          <img class="chat-img" src="./image/chat-icon.png" alt="">
+                           Chat</a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link font-nav" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"> 
+                           <img class="caption-img" src="./image/caption-icon.png" alt=""> Captions</a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link font-nav" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+                          <img class="caption-img" src="./image/paint-icon.png" alt=""> 
+                          Graphics</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="bg-about-chat ">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="flx">
+                                <label class="switch">
+                                  <input type="checkbox" checked>
+                                  <span class="slider round"></span>
+                                </label>
+                                <p class="chat-overlay-p">Chat Overlay</p>
+                              </div>                             
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row mt-1 contain">
+                          <div class="col-md-1 col-lg-1 col-sm-1 col-2">
+                            <img class="r-img" src="./image/side1.png" alt="">
+                          </div>
+                          <div class="col-md-11 col-lg-11 col-sm-11 col-10">
+                            <div class="bg-wht-blr">
+                              <p class="restream-p">Restream.io <span class="time-span">  12:12:23</span></p>
+                              <p class="social-cmt-p">Social comment </p>
+                            </div>
+                          </div>
+                          <div class="overlay">
+                            <div class="text pshow"><i class="fa fa-eye" aria-hidden="true"></i> Show</div>
+                          </div>
+                        </div>
+
+                        
+                        <div class="footer row">
+                          <div class="col-md-2 col-lg-2 col-sm-2 col-2">
+                            <div class="dropdown">
+                              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="drop-down-img" src="./image/side1.png" alt="">
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-8 col-lg-8 col-sm-8 col-8">
+                            <input class="input-p" placeholder="Type a message..." type="text" name="" id="">
+                          </div>
+                          <div class="col-md-2 col-lg-2 col-sm-2 col-2">
+                            <img class="send-icon" src="./image/send-icon.png" alt="">
+                          </div>
+
+                        </div>
+
+                      </div>
+                      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="contain-1">
+                          <div class="bg-silver">
+                            <p class="restream-p">Restream allows you to stream live to 30+ social platforms at once.</p>
+                          </div>
+                          <div class="overlay-1">
+                            <div class="text pshow-1"><i class="fa fa-eye" aria-hidden="true"></i> Show</div>
+                          </div>
+                        </div>
+                        <!-- <div class="contain-2"> -->
+                          <div class="bg-silver mt-2">
+                            <p class="restream-p">Follow us on Twitter</p>
+                            <p class="restream-atthe">@restreamio</p>
+                          </div>
+                          <!-- <div class="overlay-2">
+                            <div class="text pshow-1"><i class="fa fa-eye" aria-hidden="true"></i> Show</div>
+                          </div>
+                        </div> -->
+                        <div class="bg-silver-1 mt-2">
+                          <form>
+                            <div class="form-group">
+                              <input type="email" class="form-control email-inp" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                              <input type="password" class="form-control email-inp" id="exampleInputPassword1" placeholder="Password">
+                            </div>                            
+                            <div class="row">
+                              <div class="col-md-12 d-flex">
+                                <button type="submit" class="btn btn-primary btn-caption">Add Caption</button>
+                                                          
+                                <button type="submit" class="btn btn-cancel">Cancel</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div id="accordion">
+                              
+                              <div class="card">
+                                <div class="card-header" id="headingZero">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed brand-setting" data-toggle="collapse" data-target="#collapseZero" aria-expanded="false" aria-controls="collapseZero">
+                                      <i class="fa fa-angle-right" aria-hidden="true"></i> Brand settings <img class="i-icon" src="./image/i-icon.png" alt="">
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapseZero" class="collapse show" aria-labelledby="headingZero" data-parent="#accordion">
+                                  <div class="card-body text-left">                                 
+                                      <p class="theme-p">Theme <img class="i-icon" src="./image/i-icon.png" alt=""></p>
+                                      <div class="img-df">
+                                        <div class="default-one">
+                                          <a class="bord-img-1" href="#">
+                                            <img class="default-img" src="./image/default.png" alt="">
+                                          </a>
+                                          <a class="bord-img" href="#">
+                                            <img class="news-img" src="./image/news.png" alt="">
+                                          </a>
+                                          <a class="bord-img-2" href="#">
+                                            <img class="news-img" src="./image/round.png" alt="">
+                                          </a>                                         
+                                        </div>
+                                      </div>
+
+                                      <p class="primary-p">Primary color <img class="i-icon" src="./image/i-icon.png" alt=""></p>
+                                      
+                                      <div class="img-df">
+                                        <span class="blue-col"> 
+                                        </span>
+                                        <span class="silver-col">
+                                          # 
+                                        </span><span class="light-silver-col">266EFF</span>
+                                        <span>
+
+                                        </span>
+                                      </div>
+                                      <div class="img-df mt-2">
+                                        <label class="switch">
+                                          <input type="checkbox" checked>
+                                          <span class="slider round"></span>
+                                        </label> <span class="default-graphics"> Default graphics <img class="i-icon" src="./image/i-icon.png" alt="">
+                                        </span>
+                                      </div>
+                                      <div class="img-df">
+                                        <label class="switch">
+                                          <input type="checkbox" checked>
+                                          <span class="slider round"></span>
+                                        </label> <span class="default-graphics"> Show non-video participants <img class="i-icon" src="./image/i-icon.png" alt="">
+                                        </span>
+                                      </div>
+                                      <div class="img-df">
+                                        <label class="switch">
+                                          <input type="checkbox" >
+                                          <span class="slider round"></span>
+                                        </label> <span class="default-graphics"> Automatically share screen <img class="i-icon" src="./image/i-icon.png" alt="">
+                                        </span>
+                                      </div>
+                                      <div class="img-df">
+                                        <label class="switch">
+                                          <input type="checkbox" checked>
+                                          <span class="slider round"></span>
+                                        </label> <span class="default-graphics"> Participants names <img class="i-icon" src="./image/i-icon.png" alt="">
+                                        </span>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="card">
+                                <div class="card-header" id="headingOne">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link brand-setting" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      <i class="fa fa-angle-right" aria-hidden="true"></i>    Logo <img class="i-icon" src="./image/i-icon.png" alt="">
+                                    </button>
+                                  </h5>
+                                </div>                           
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                  <div class="card-body">
+                                   <div class="row">
+                                     <div class="col-md-12 text-left">
+                                       <div class="img-df d-flex">
+                                         <img class="tr-img" src="./image/download.jpg" alt="">
+                                          <div class="add-bg"><i class="fa fa-plsu fa-plus" aria-hidden="true"></i></div>
+                                       </div>
+                                     </div>
+                                   </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed brand-setting" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      <i class="fa fa-angle-right" aria-hidden="true"></i>  Overlay <img class="i-icon" src="./image/i-icon.png" alt="">
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                                  <div class="card-body">                                   
+                                    <div class="img-df d-flex">
+                                      <img class="tr-img-1" src="./image/download.jpg" alt="">
+                                      <img class="tr-img-1 ml-2" src="./image/download.jpg" alt="">
+                                      <img class="tr-img-1 ml-2" src="./image/download.jpg" alt="">
+                                       <div class="add-bg-1"><i class="fa fa-plsu-1 fa-plus" aria-hidden="true"></i></div>
+                                    </div>                                    
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="card">
+                                <div class="card-header" id="headingThree">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed brand-setting" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      <i class="fa fa-angle-right" aria-hidden="true"></i> Video clips <img class="i-icon" src="./image/i-icon.png" alt="">
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+                                  <div class="card-body">                                 
+                                      <div class="img-df d-flex">
+                                        <img class="tr-img-1" src="./image/download.jpg" alt="">
+                                        <img class="tr-img-1 ml-2" src="./image/download.jpg" alt="">
+                                        <img class="tr-img-1 ml-2" src="./image/download.jpg" alt="">
+                                         <div class="add-bg-1"><i class="fa fa-plsu-1 fa-plus" aria-hidden="true"></i></div>
+                                      </div> 
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="card">
+                                <div class="card-header" id="headingFour">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed brand-setting" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                      <i class="fa fa-angle-right" aria-hidden="true"></i> Background <img class="i-icon" src="./image/i-icon.png" alt="">
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+                                  <div class="card-body">                                 
+                                      <div class="img-df ">
+                                        <img class="tr-img-1" src="./image/download.jpg" alt="">
+                                        <img class="tr-img-1 ml-2" src="./image/download.jpg" alt="">
+                                        <img class="tr-img-1 ml-2" src="./image/download.jpg" alt="">
+                                         <div class="add-bg-1"><i class="fa fa-plsu-1 fa-plus" aria-hidden="true"></i></div>
+                                      </div> 
+                                  </div>
+                                </div>
+                              </div>                                     
+                            </div>
+                          </div>
+                        </div>
+                     
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>   
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footers">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-12">
+                  <footer class="page-footer font-small blue pt-4">
+                      <div class="container-fluid text-center text-md-left">
+                          <div class="row hr">
+                              <div class="col-md-2 mt-md-0 mt-3">
+                                  <p class="fooot">AWTStream</p>
+                              </div>
+                              <hr class="clearfix w-100 d-md-none pb-3 clo">
+                      
+                              <div class="col-md-3 mb-md-0 mb-3">
+                                <h5 class="footer-title">Important link</h5>
+                                <ul class="list-unstyled">
+                                  <li>
+                                    <a class="foot-list" href="./landing.html">Home</a>
+                                  </li>
+                                  <li>
+                                    <a class="foot-list" href="./contact-us.html"
+                                      >Contact us</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="foot-list" href="./support.html"> Support</a>
+                                  </li>
+                                  <li>
+                                    <a class="foot-list" href="./pricing.html">Pricing</a>
+                                  </li>
+                                </ul>
+                              </div>
+            
+                              <div class="col-md-3 mb-md-0 mb-3 mab">
+                                <h5 class="footer-title">Explore</h5>
+                                <ul class="list-unstyled">
+                                  <li>
+                                    <a class="foot-list" href="./sign-in.html">Sign in</a>
+                                  </li>
+                                  <li>
+                                    <a class="foot-list" href="./sign-up.html"
+                                      >Create an account</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="foot-list" href="./how-it-works.html"
+                                      >How does it works</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="foot-list" href="./about-us.html">About</a>
+                                  </li>
+                                  <li>
+                                    <a class="foot-list" href="./socail-channel.html"
+                                      >Customer</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+            
+                              <div class="col-md-3 mb-md-0 mb-3 mab">
+                                <h5 class="footer-title">Follow</h5>
+                                <ul class="list-unstyled">
+                                  <li>
+                                    <a class="foot-list" href="./app-dashboard.html"
+                                      >Product</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="foot-list" href="./studio-page.html"
+                                      >Studio</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="foot-list" href="./app-dashboard.html"
+                                      >Multistreaming</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="foot-list" href="./chat.html">Chat</a>
+                                  </li>
+                                  <li>
+                                    <a class="foot-list" href="./analytics.html"
+                                      >Analytics</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                              
+                              <div class="col-md-2"></div>
+          
+                          </div>      
+                      </div>
+                      <!-- Footer Links -->
+                  
+                      <!-- Copyright -->
+                      <div class="row">
+                          <div class="col-md-12 col-lg-12 col-sm-12 col-12">
+                              <div class="footer-copyright text-center py-3">
+                                  Term of Service &nbsp; Privacy Policy &nbsp; Partners & Affiliates &nbsp; Contact Us : 
+                                   <a class="support-base" href="#"> Support@Awtstream.com</a>
+                                  </div>
+                          </div>
+                          
+                      </div>
+                      
+                      <!-- Copyright -->
+                  
+                  </footer>
+              </div>
+          </div>
+      </div>        
+  </section>
+
+      <script src="./css/bootstrap/js/jquery-3.5.1.slim.min.js" ></script>
+    <script src="./css/bootstrap/js/bootstrap.bundle.min.js" ></script>
+   
+  </body>
+</html>
