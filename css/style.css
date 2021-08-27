@@ -2018,7 +2018,7 @@ input:checked + .slider:before {
   border-radius: 0;
 }
 img.cat-img.rasi {
-  width: 100%;
+  width: 80%;
 }
 .img-bg-home {
   background: url(../image/home-bg-image.png);
