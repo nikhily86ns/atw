@@ -5,11 +5,29 @@ body {
 /* header */
 .dropbtn {
   background-color: #150485 ;
-  color: white;
+  color: #0062ff;
   padding: 16px;
   font-size: 16px;
   border: none;
   font-weight: 600;
+}
+
+.cd{
+  background-color: #FFFFFF24;
+  padding: 35px 35px 35px 35px;
+  box-shadow: 0px 0px 25px 0px rgb(255 255 255 / 18%);
+  border-style: solid;
+  border-width: 0px 0px 5px 0px;
+  border-color: rgb(0, 155, 142);
+  font-family: 'Niconne', cursive;
+  /* transition: transform .3s ease-out !important; */
+}
+
+.cd:hover{
+  /* transform: translate(0, -5px) !important; */
+  transform: scale(1.05) !important;
+  transition: 0.5s !important;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.12), 0 4px 8px rgba(255, 255, 255, 0.06) !important;
 }
 
 .dropdown {
@@ -45,7 +63,7 @@ body {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #000000;
+  background-color: #150485;
 }
 
 .bg-dark-1 {
@@ -2047,6 +2065,11 @@ p.multi-stream-p {
 .mtrag {
   margin: 145px 0 0 0;
 }
+.mtrag:hover{
+  transform: scale(1.05) !important;
+  transition: 0.5s;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.12), 0 4px 8px rgba(255, 255, 255, 0.06) !important;
+}
 
 p.and-p {
   font-size: 42px;
@@ -2055,6 +2078,7 @@ p.and-p {
 }
 p.thirty-p {
   font-size: 23px;
+  font-family: "Snell Roundhand", cursive;
   line-height: 27px;
   margin: 63px 0 14px 0;
 }
@@ -2063,6 +2087,7 @@ section.how-it {
 }
 p.works-how-p {
   font-size: 42px;
+  font-family: 'Niconne', cursive;
   font-weight: 800;
   margin-top: 55px;
 }
@@ -2110,11 +2135,13 @@ img.new-nikon-img {
 }
 p.multi-p {
   font-size: 23px;
+  font-family: "Snell Roundhand", cursive;
   line-height: 27px;
   margin: 52px 0 14px 0;
 }
 p.your-p {
   font-size: 23px;
+  font-family: "Snell Roundhand", cursive;
   line-height: 27px;
   margin: 52px 0 14px 0;
 }
@@ -3001,7 +3028,7 @@ section.contact_us {
     padding: 65px 37px 40px 37px;
   }
   img.bal-img {
-    width: 40%;
+    width: 100%;
     margin: 24px 0 0 0;
   }
   img.g-img {
@@ -3010,6 +3037,8 @@ section.contact_us {
   img.cat-img {
     width: 100%;
   }
+  
+
   p.works-how-p,
   p.add-toplus-p,
   p.add-toplus-p {
@@ -3679,6 +3708,7 @@ section.contact_us {
     padding: 65px 37px 40px 37px;
   }
   img.bal-img {
+    display: none;
     width: 40%;
     margin: 24px 0 0 0;
   }
@@ -4136,6 +4166,11 @@ section.contact_us {
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
   /* new-studio-page */
+  img.bal-img {
+    display: none;
+    width: 40%;
+    margin: 24px 0 0 0;
+  }
   video.video-uncle-hand {
     width: 49%;
   }

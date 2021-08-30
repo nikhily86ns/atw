@@ -8,17 +8,28 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
     <!-- font awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js"></script>
 
     <style>
       @media screen and (max-width: 320px) {
@@ -100,8 +111,9 @@
             </p>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col-md-4 text-center">
+       
+        <div class="row mt-5 d-flex justify-content-lg-between ">
+          <div class="col-md-4 text-center shadow-lg p-3 rounded cd animated fadeInLeft">
             <img class="bag-img" src="./image/bag.png" alt="" />
             <p class="thirty-p">
               30+ Social platforms, from <br />
@@ -111,17 +123,19 @@
           <!-- <div class="col-md-1 text-center">
             <p class="and-p">&</p>
           </div> -->
-          <div class="col-md-4 text-center">
+
+          <div class="col-md-4 text-center shadow-lg p-3 rounded cd animated fadeInUp">
             <img class="bag-img" src="./image/rt-mp.png" alt="" />
             <p class="multi-p">
               Multiple channels on <br />
               a single platform
             </p>
           </div>
+      
           <!-- <div class="col-md-1 text-center">
             <p class="and-p">&</p>
           </div> -->
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-center shadow-lg p-3 rounded cd animated fadeInRight">
             <img class="bag-img" src="./image/page-group.png" alt="" />
             <p class="your-p">
               Your server or anywhere <br />
@@ -157,7 +171,7 @@
           </div>
           <div class="col-md-6 col-lg-6 col-sm-6 col-12 tc">
             <!-- <img class="new-nikon-img" src="./image/nikon-new.jpg" alt="" /> -->
-            <div class="cam-img-1">
+            <div class="cam-img-1 animated slideInRight">
               <video class="video-video-land" controls>
                 <source
                   src="./css/video/videoplayback-1.mp4"
@@ -167,58 +181,64 @@
             </div>
           </div>
         </div>
+        
 
         <div class="row mtrag">
           <div class="col-md-12">
             <div class="pad-lad">
               <div class="row">
-                <div class="col-md-6 col-lg-6 col-sm-6 col-12">
-                  <p class="rstem-p">
-                    <b> AWTstream </b> is natively
-                    <b
-                      >integrated into top <br />
-                      streaming software,
-                    </b>
-                    like OBS Studio, <br />
-                    SLOBS, Elgato, XSplit, and many others.
-                  </p>
-                </div>
-                <div class="col-md-6 col-lg-6 col-sm-6 col-12">
-                  <div class="row">
-                    <div class="col-md-4 col-lg-4 col-sm-6 col-12 text-center">
-                      <img class="bal-img" src="./image/ball.png" alt="" />
-                      <br />
-                      <br />
-                      <img class="g-img" src="./image/g.png" alt="" />
-                    </div>
-                    <div class="col-md-4 col-lg-4 col-sm-6 col-12 text-center">
-                      <img class="bal-img" src="./image/swim.png" alt="" />
-                      <br />
-                      <br />
-                      <img class="g-img" src="./image/w.png" alt="" />
-                    </div>
-                    <div class="col-md-4 col-lg-4 col-sm-6 col-12 text-center">
-                      <img class="bal-img" src="./image/xsplit.png" alt="" />
-                      <br />
-                      <br />
-                      <img class="g-img" src="./image/c.png" alt="" />
-                    </div>
+
+                  <div class="col-md-6 col-lg-6 col-sm-6 col-12">
+                    <p class="rstem-p">
+                      <b> AWTstream </b> is natively
+                      <b>integrated into top <br />
+                        streaming software,
+                      </b>
+                      like OBS Studio, <br />
+                      SLOBS, Elgato, XSplit, and many others.
+                    </p>
                   </div>
+
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-12">
+                      <div class="row">
+                        <div class="col-md-4 col-lg-4 col-sm-4 col-12 text-center">
+                          <img class="bal-img" src="./image/ball.png" alt="" />
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-sm-4 col-12 text-center">
+                          <img class="bal-img" src="./image/swim.png" alt="" />
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-sm-4 col-12 text-center">
+                          <img class="bal-img" src="./image/xsplit.PNG" alt="" />
+                        </div>
+                      </div>  
+                      <div class="row">
+                        <div class="col-md-4 col-lg-4 col-sm-4 col-12 text-center">
+                          <img class="bal-img" src="./image/g.png" alt="" />
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-sm-4 col-12 text-center">
+                          <img class="bal-img" src="./image/w.png" alt="" />
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-sm-4 col-12 text-center">
+                          <img class="bal-img" src="./image/c.png" alt="" />
+                        </div>
+                      </div>  
+                    </div>
+
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        
       </div>
     </section>
 
     <section class="secure-your pt-pd">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-6 col-sm-6 col-12">
-            <img class="cat-img" src="./image/cat.png" alt="" />
+          <div class="col-md-6 col-lg-6 col-sm-6 col-12 ">
+            <img class="cat-img animated slideInLeft" src="./image/cat.png" alt="" />
           </div>
-          <div class="col-md-6 col-lg-6 col-sm-6 col-12">
+          <div class="col-md-6 col-lg-6 col-sm-6 col-12 animated slideInRight">
             <h2 class="secure-h2-1">
               Secure your <br />
               stream quality
@@ -241,7 +261,7 @@
     <section class="secure-your pt-pd">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-6 col-sm-6 col-12">
+          <div class="col-md-6 col-lg-6 col-sm-6 col-12 animated slideInLeft">
             <h2 class="secure-h2">
               Share the stage <br />
               with your guests
@@ -258,7 +278,7 @@
             </ul>
           </div>
           <div class="col-md-6 col-lg-6 col-sm-6 col-12 text-center">
-            <img class="ct-img" src="./image/live-girl.PNG" alt="" />
+            <img class="ct-img animated slideInRight" src="./image/live-girl.PNG" alt="" />
           </div>
         </div>
       </div>
@@ -268,9 +288,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-6 col-sm-6 col-12">
-            <img class="cat-img rasi" src="./image/table.png" alt="" />
+            <img class="cat-img rasi animated slideInLeft" src="./image/table.png" alt="" />
           </div>
-          <div class="col-md-6 col-lg-6 col-sm-6 col-12 pt-5">
+          <div class="col-md-6 col-lg-6 col-sm-6 col-12 pt-5 animated slideInRight">
             <h2 class="secure-h2-1">
               Make streaming <br />
               less complicated
@@ -291,24 +311,25 @@
 
     <section class="visible-your">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-6 col-sm-6 col-12">
-            <p class="secure-h2">
-              Restream allows us to be <br />
-              <b>visible to all our audiences.</b>
-            </p>
-            <p class="secure-h2">
-              " I'm easily able to stream to <br />
-              Twitch, Facebook,and YouTube <br />
-              so our audience can join us on <br />
-              thier favorite platform."
-            </p>
-            <p class="whitney-p"><b>Whitney Stutes,</b> Marketing Manager</p>
-          </div>
-          <div class="col-md-6 col-lg-6 col-sm-6 col-12 text-center">
-            <img class="cat-img" src="./image/lady.png" alt="" />
-            <!-- <img class="cat-img" src="./image/justin.png" alt=""> -->
-          </div>
+        <div class="row cd">
+
+              <div class="col-md-6 col-lg-6 col-sm-6 col-12">
+                <p class="secure-h2">
+                  Restream allows us to be <br />
+                  <b>visible to all our audiences.</b>
+                </p>
+                <p class="secure-h2">
+                  " I'm easily able to stream to <br />
+                  Twitch, Facebook,and YouTube <br />
+                  so our audience can join us on <br />
+                  thier favorite platform."
+                </p>
+                <p class="whitney-p"><b>Whitney Stutes,</b> Marketing Manager</p>
+              </div>
+              <div class="col-md-6 col-lg-6 col-sm-6 col-12 text-center">
+                <img class="cat-img" src="./image/lady.png" alt="" />
+              </div>
+
         </div>
       </div>
     </section>
@@ -331,7 +352,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
-            <footer class="page-footer font-small blue pt-4">
+            <footer class="page-footer font-small pt-4">
               <div class="container-fluid text-center text-md-left">
                 <div class="row hr">
                   <div class="col-md-2 mt-md-0 mt-3">
@@ -440,5 +461,6 @@
 
     <script src="./css/bootstrap/js/jquery-3.5.1.slim.min.js"></script>
     <script src="./css/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
   </body>
 </html>
