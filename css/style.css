@@ -2817,6 +2817,11 @@ section.contact_us {
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 399px) {
   /* new-studio-page */
+  img.bal-img {
+    display: none;
+    width: 40%;
+    margin: 24px 0 0 0;
+  }
   video.video-uncle-hand {
     width: 52%;
     height: 116px;
@@ -3584,6 +3589,12 @@ section.contact_us {
 }
 @media only screen and (min-device-width: 400px) and (max-device-width: 500px) {
   /* new-studio-page */
+  img.bal-img {
+    display: none;
+    width: 40%;
+    margin: 24px 0 0 0;
+  }
+
   video.video-uncle-hand {
     width: 52%;
     height: 116px;
@@ -4685,6 +4696,11 @@ section.contact_us {
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1215px) {
   /* sign in */
+  img.bal-img {
+    display: none;
+    width: 40%;
+    margin: 24px 0 0 0;
+  }
   a.btn-sign-free,
   a.btn-sign-free-blue {
     width: 53%;
