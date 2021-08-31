@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -139,7 +139,7 @@
   <section class="how-it">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-lg-6 col-sm-6 col-12">
+        <div class="col-md-6 col-lg-6 col-sm-6 col-12"  data-aos="fade-left">
           <p class="works-how-p">How it works</p>
           <div class="row">
             <div class="col-md-2 col-lg-2 col-sm-12 col-12">
@@ -159,9 +159,9 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-6 col-sm-6 col-12 tc">
+        <div class="col-md-6 col-lg-6 col-sm-6 col-12 tc"  data-aos="fade-right">
           <!-- <img class="new-nikon-img" src="./image/nikon-new.jpg" alt="" /> -->
-          <div class="cam-img-1 animated slideInRight">
+          <div class="cam-img-1 ">
             <video class="video-video-land" controls>
               <source src="./css/video/videoplayback-1.mp4" type="video/mp4" />
             </video>
@@ -170,7 +170,7 @@
       </div>
 
 
-      <div class="row mtrag">
+      <div class="row mtrag" data-aos="flip-right">
         <div class="col-md-12">
           <div class="pad-lad">
             <div class="row">
@@ -222,10 +222,10 @@
   <section class="secure-your pt-pd">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-lg-6 col-sm-6 col-12 ">
+        <div class="col-md-6 col-lg-6 col-sm-6 col-12" data-aos="slide-up">
           <img class="cat-img animated slideInLeft" src="./image/cat.png" alt="" />
         </div>
-        <div class="col-md-6 col-lg-6 col-sm-6 col-12 animated slideInRight">
+        <div class="col-md-6 col-lg-6 col-sm-6 col-12" data-aos="flip-right">
           <h2 class="secure-h2-1">
             Secure your <br />
             stream quality
@@ -248,7 +248,7 @@
   <section class="secure-your pt-pd">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-lg-6 col-sm-6 col-12 animated slideInLeft">
+        <div class="col-md-6 col-lg-6 col-sm-6 col-12" data-aos="zoom-out-left">
           <h2 class="secure-h2">
             Share the stage <br />
             with your guests
@@ -264,7 +264,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-6 col-lg-6 col-sm-6 col-12 text-center">
+        <div class="col-md-6 col-lg-6 col-sm-6 col-12 text-center" data-aos="zoom-in-down">
           <img class="ct-img animated slideInRight" src="./image/live-girl.PNG" alt="" />
         </div>
       </div>
@@ -274,10 +274,10 @@
   <section class="secure-your pt-pd">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-lg-6 col-sm-6 col-12">
+        <div class="col-md-6 col-lg-6 col-sm-6 col-12" data-aos="slide-down">
           <img class="cat-img rasi animated slideInLeft" src="./image/table.png" alt="" />
         </div>
-        <div class="col-md-6 col-lg-6 col-sm-6 col-12 pt-5 animated slideInRight">
+        <div class="col-md-6 col-lg-6 col-sm-6 col-12 pt-5 animated slideInRight" data-aos="slide-up">
           <h2 class="secure-h2-1">
             Make streaming <br />
             less complicated
@@ -298,7 +298,7 @@
 
   <section class="visible-your">
     <div class="container">
-      <div class="row cd">
+      <div class="row cd" data-aos='flip-up'>
 
         <div class="col-md-6 col-lg-6 col-sm-6 col-12">
           <p class="secure-h2">
@@ -433,6 +433,15 @@
   <script src="./css/bootstrap/js/jquery-3.5.1.slim.min.js"></script>
   <script src="./css/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 700,
+      easing: 'ease'
+    });
+  </script>
+
 </body>
 
 </html>
